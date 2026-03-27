@@ -9,7 +9,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "netlify:login": "netlify login",
+    "netlify:link": "netlify link",
+    "netlify:env": "netlify env:pull",
+    "netlify:deploy": "netlify deploy --build --prod"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.100.1",
@@ -29,6 +33,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
+    "netlify-cli": "^24.6.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
