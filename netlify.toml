@@ -6,6 +6,8 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  # Next 16 Build / große dependency tree – verhindert oft OOM auf kleinen Build-VMs
+  NODE_OPTIONS = "--max-old-space-size=6144"
 
 # ─── Next.js Plugin (App Router + SSR/ISR support) ───────────────────────────
 [[plugins]]
