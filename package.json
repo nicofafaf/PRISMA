@@ -7,13 +7,13 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack",
+    "build": "node --max-old-space-size=16384 ./node_modules/next/dist/bin/next build --webpack",
     "start": "next start",
     "lint": "eslint",
-    "netlify:login": "netlify login",
-    "netlify:link": "netlify link",
-    "netlify:env": "netlify env:list",
-    "netlify:deploy": "netlify deploy --build --prod"
+    "netlify:login": "npx -y netlify-cli login",
+    "netlify:link": "npx -y netlify-cli link",
+    "netlify:env": "npx -y netlify-cli env:list",
+    "netlify:deploy": "npx -y netlify-cli deploy --build --prod"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.100.1",
@@ -33,7 +33,6 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
-    "netlify-cli": "^24.6.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
