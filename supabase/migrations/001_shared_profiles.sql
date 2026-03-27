@@ -23,12 +23,14 @@ CREATE TABLE IF NOT EXISTS public.shared_profiles (
 ALTER TABLE public.shared_profiles ENABLE ROW LEVEL SECURITY;
 
 -- Jeder darf lesen
+DROP POLICY IF EXISTS "public_read" ON public.shared_profiles;
 CREATE POLICY "public_read"
   ON public.shared_profiles
   FOR SELECT
   USING (true);
 
 -- Jeder darf ein neues Profil einstellen
+DROP POLICY IF EXISTS "public_insert" ON public.shared_profiles;
 CREATE POLICY "public_insert"
   ON public.shared_profiles
   FOR INSERT
