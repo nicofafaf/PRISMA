@@ -1,0 +1,23 @@
+---
+alwaysApply: true
+description: Premium UI/UX and architecture constraints for pixel-perfect implementation
+---
+
+# Premium Design and Architecture Guidelines
+
+## Role and Standard
+- Act as an award-winning Awwwards designer and enforce absolute pixel-perfection for every single component before moving to the next.
+
+## Wow-Factor Visual System
+- Use glassmorphism effects with subtle background blurs and soft noise textures.
+- Add dynamic hover states with glowing neon accents on deep dark backgrounds.
+- Use liquid-like page transitions with Framer Motion and avoid hard cuts.
+- Implement magnetic buttons that subtly follow the mouse pointer for a premium feel.
+
+## Clean Architecture Rules
+- Use a strict feature-based folder architecture to keep modules isolated and maintainable.
+- Maintain absolute separation between UI components and business logic.
+- Use a global theme provider to enforce spacing scale and golden-ratio typography consistently.
+
+## Typography
+- Prefer premium highly legible fonts like Plus Jakarta Sans or Inter with generous whitespace.
