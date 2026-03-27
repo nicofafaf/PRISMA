@@ -1,8 +1,8 @@
 # ─── Netlify Build Config ────────────────────────────────────────────────────
 
 [build]
-  command   = "npm run build"
-  publish   = ".next"
+  command = "npm run build"
+  # Publish-Verzeichnis setzt @netlify/plugin-nextjs automatisch (nicht .next manuell setzen)
 
 [build.environment]
   NODE_VERSION = "20"
